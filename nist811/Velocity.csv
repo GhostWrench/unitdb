@@ -1,0 +1,13 @@
+Convert From, Convert To, Multiply By, Supported
+ft / hr, m / s, 8.466667e-05, true
+ft / min, m / s, 5.08e-03, true
+ft / s, m / s, 3.048e-01, true
+in / s, m / s, 2.54e-02, true
+[k]m / hr, m / s, 2.777778e-01, true
+knot, m / s, 5.144444e-01, true
+mi / hr, m / s, 4.4704e-01, true
+mi / hr, [k]m / hr, 1.609344e+00, true
+mi / min, m / s, 2.68224e+01, true
+mi / s, m / s, 1.609344e+03, true
+rpm, rad / s, 1.047198e-01, true
+rev / min, rad / s, 1.047198e-01, true

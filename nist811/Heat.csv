@@ -1,0 +1,24 @@
+Convert From, Convert To, Multiply By, Supported
+BTU / ft^3, J / m^3, 3.725895e+04, true
+BTU / lbm, J / [k]g, 2.326e+03, true
+cal / g, J / [k]g, 4.1868e+03, true
+BTU / hr ft^2 deltaF, W / m^2 K, 5.678263e+00, true
+BTU / s ft^2 deltaF, W / m^2 K,	2.044175e+04, true
+BTU / ft^2 hr, W / m^2, 3.154591e+00, true
+BTU / ft^2 s, W / m^2, 1.135653e+04, true
+BTU / deltaF, J / K, 1.899101e+03, true
+BTU / Ra, J / K, 1.899101e+03, true
+BTU / hr, W, 2.930711e-01, true
+BTU / s, W, 1.055056e+03, true
+BTU / lbm deltaF, J / [k]g K, 4.1868e+03, true
+BTU / lbm Ra, J / [k]g K, 4.1868e+03, true
+cal / g deltaC, J / [k]g K, 4.1868e+03, true
+cal / g K, J / [k]g K, 4.1868e+03, true
+BTU ft / hr ft^2 deltaF, W / m K, 1.730735e+00, true
+BTU in / hr ft^2 deltaF, W / m K, 1.442279e-01, true
+BTU in / s ft^2 deltaF, W / m K, 5.192204e+02, true
+clo (clothing), m^2 K / W, 1.55e-01, true
+deltaF hr ft^2 / BTU, m^2 K / W, 1.761102e-01, true
+deltaF hr / BTU, K / W, 1.895634e+00, true
+deltaF s / BTU, K / W, 5.265651e-04, true
+deltaF hr ft^2 / BTU in, m K / W, 6.933472e+00, true

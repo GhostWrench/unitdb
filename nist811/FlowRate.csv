@@ -1,0 +1,7 @@
+Convert From, Convert To, Multiply By, Supported
+ft^3 / min, m^3 / s, 4.719474e-04, true
+ft^3 / s, m^3 / s, 2.831685e-02, true
+in^3 / min, m^3 / s, 2.731177e-07, true
+yd^3 / min, m^3 / s, 1.274258e-02, true
+gal / day, m^3 / s, 4.381264e-08, true
+gal / min, m^3 / s, 6.309020e-05, true

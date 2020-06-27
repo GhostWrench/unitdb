@@ -1,0 +1,7 @@
+Convert From, Convert To, Multiply By, Supported
+deg, rad, 1.745329e-02, true
+gon (grade), rad, 1.570796e-02, false
+mil (angular mil), rad, 9.817477e-04, false
+arcmin, rad, 2.908882e-04, true
+rev, rad, 6.283185e+00, true
+arcsec, rad, 4.848137e-06, true

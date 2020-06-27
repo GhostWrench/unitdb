@@ -1,0 +1,5 @@
+Convert From, Convert To, Multiply By, Supported
+gal / HP hr, m^3 / J, 1.410089e-09, true
+mi / gal, m / m^3, 4.251437e+05, true
+mi / gal, [k]m / L, 4.251437e-01, true
+lbm / HP hr, [k]g / J, 1.689659e-07, true

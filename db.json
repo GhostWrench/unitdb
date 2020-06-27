@@ -1,0 +1,1492 @@
+{
+    "$schema": "./schema.json",
+    "prefixes": {
+        "y": {
+            "scale": "1e-24", 
+            "name": "yocto"
+        },
+        "z": {
+            "scale": "1e-21", 
+            "name": "zepto"
+        },
+        "a": {
+            "scale": "1e-18", 
+            "name": "atto"
+        },
+        "f": {
+            "scale": "1e-15",
+            "name": "femto"
+        },
+        "p": {
+            "scale": "1e-12",
+            "name": "pico"
+        },
+        "n": {
+            "scale": "1e-9",
+            "name": "nano"
+        },
+        "u": {
+            "scale": "1e-6",
+            "name": "micro"
+        },
+        "m": {
+            "scale": "1e-3",
+            "name": "milli"
+        },
+        "c": {
+            "scale": "1e-2",
+            "name": "centi"
+        },
+        "d": {
+            "scale": "1e-1",
+            "name": "deci"
+        },
+        "da": {
+            "scale": "1e1",
+            "name": "deca"
+        },
+        "h": {
+            "scale": "1e2",
+            "name": "hecto"
+        },
+        "k": {
+            "scale": "1e3",
+            "name": "kilo"
+        },
+        "M": {
+            "scale": "1e6",
+            "name": "mega"
+        },
+        "G": {
+            "scale": "1e9",
+            "name": "giga"
+        },
+        "T": {
+            "scale": "1e12",
+            "name": "tera"
+        },
+        "P": {
+            "scale": "1e15",
+            "name": "peta"
+        },
+        "E": {
+            "scale": "1e18",
+            "name": "exa"
+        },
+        "Z": {
+            "scale": "1e21",
+            "name": "zetta"
+        },
+        "Y": {
+            "scale": "1e24",
+            "name": "yotta"
+        },
+        "Ki": {
+            "scale": "Math.pow(2,10)",
+            "name": "kibi"
+        },
+        "Mi": {
+            "scale": "Math.pow(2,20)",
+            "name": "mebi"
+        },
+        "Gi": {
+            "scale": "Math.pow(2,30)",
+            "name": "gibi"
+        },
+        "Ti": {
+            "scale": "Math.pow(2,40)",
+            "name": "tebi"
+        },
+        "Pi": {
+            "scale": "Math.pow(2,50)",
+            "name": "pebi"
+        },
+        "Ei": {
+            "scale": "Math.pow(2,60)",
+            "name": "exbi"
+        },
+        "Zi": {
+            "scale": "Math.pow(2,70)",
+            "name": "zebi"
+        },
+        "Yi": {
+            "scale": "Math.pow(2,80)",
+            "name": "yobi"
+        }
+    },
+    "units": {
+        "1": {
+            "name": "One",
+            "description": "Unit non-dimensional quantity",
+            "category": "unitless",
+            "scale": "1",
+            "dimensions": {}
+        },
+        "%": {
+            "name": "Percent",
+            "description": "Non dimensional percent (100 % == 1)",
+            "category": "unitless",
+            "scale": "1e-2",
+            "dimensions": {}
+        },
+        "ppm": {
+            "name": "Parts per Million",
+            "description": "Unitless quantity defined as 1 / 10^6",
+            "category": "unitless",
+            "scale": "1/1e6",
+            "dimensions": {}
+        },
+        "ppb": {
+            "name": "Parts per Billion",
+            "description": "Unitless quantity defined as 1 / 10^9",
+            "category": "unitless",
+            "scale": "1/1e9",
+            "dimensions": {}
+        },
+        "ppt": {
+            "name": "Parts per Trillion",
+            "description": "Unitless quantity defined as 1 / 10^12",
+            "category": "unitless",
+            "scale": "1/1e12",
+            "dimensions": {}
+        },
+        "g": {
+            "name": "Gram",
+            "description": "unit of mass defined as 1e-3 kg",
+            "category": "mass",
+            "scale": "1e-3", 
+            "dimensions": {"mass": 1}
+        },
+        "Da" : {
+            "name": "Dalton",
+            "description": "Sometimes called an atomic mass unit, defined as 1/12 of the mass of an unbound neutral atom of carbon-12 in its nuclear and electronic ground state and at rest",
+            "category": "mass",
+            "scale": "1.66053906660e-27",
+            "dimensions": {"mass": 1},
+            "aliases": ["u", "AMU"]
+        },
+        "grain": {
+            "name": "Grain",
+            "description": "Mass approximately equivalent to a single ideal seed of a cereal, in particular wheat or barley",
+            "category": "mass",
+            "scale": "6.479891e-5",
+            "dimensions": {"mass": 1}
+        },
+        "ozm": {
+            "name": "Ounce",
+            "description": "US and Imperial unit equal to 1/16 of a Pound Mass",
+            "category": "mass",
+            "scale": "2.8349523125e-2",
+            "dimensions": {"mass": 1}
+        },
+        "dram": {
+            "name": "Dram",
+            "description": "Unit of mass historically used by apothecaries equal to 1/16 of an ounce",
+            "category": "mass",
+            "scale": "1.7718451953125e-3",
+            "dimensions": {"mass": 1}
+        },
+        "lbm": {
+            "name": "Pound",
+            "description": "US and Imperial primary unit of mass",
+            "category": "mass",
+            "scale": "4.5359237e-1",
+            "dimensions": {"mass": 1}
+        },
+        "stone": {
+            "name": "Stone",
+            "description": "Imperial unit equal to 14 Pounds Mass",
+            "category": "mass",
+            "scale": "6.35029318",
+            "dimensions": {"mass": 1}
+        },
+        "sg": {
+            "name": "Slug",
+            "description": "US and Imperial unit defined as 1 lbf / Standard Gravity",
+            "category": "mass",
+            "scale": "1.45939029372064e1",
+            "dimensions": {"mass": 1},
+            "aliases": ["slug"]
+        },
+        "cwt": {
+            "name": "Short Hundredweight",
+            "description": "Typically used in the US, equal to 100 lbm",
+            "category": "mass",
+            "scale": "4.5359237e1",
+            "dimensions": {"mass": 1}
+        },
+        "dwt": {
+            "name": "Short Pennyweight",
+            "description": "From the weight of an English penny in the Middle Ages, equal to 24 grains or 1/20 of a troy ounce",
+            "category": "mass",
+            "scale": "1.55517384e-3",
+            "dimensions": {"mass": 1}
+        },
+        "uk_cwt": {
+            "name": "Long Hundredweight",
+            "description": "Typically used in the UK, equal to 8 stone",
+            "category": "mass",
+            "scale": "5.080234544e1",
+            "dimensions": {"mass": 1}
+        },
+        "ton": {
+            "name": "Ton",
+            "description": "US customary unit equal to 2000 lbm",
+            "category": "mass",
+            "scale": "9.0718474e2",
+            "dimensions": {"mass": 1}
+        },
+        "uk_ton": {
+            "name": "UK Ton",
+            "description": "English customary unit that is equal to 20 Long Hundredweight or 160 Stone",
+            "category": "mass",
+            "scale": "1.0160469088e3",
+            "dimensions": {"mass": 1}
+        },
+        "metric_ton": {
+            "name": "Metric Ton",
+            "description": "Sometimes seen as 'tonne', this mass equals 1000 kg",
+            "category": "mass",
+            "scale": "1e3",
+            "dimensions": {"mass": 1},
+            "aliases": ["tonne"]
+        },
+        "carat": {
+            "name": "Carat",
+            "description": "Equal to 200 mg, typically used to measure gemstones",
+            "category": "mass",
+            "scale": "2e-4",
+            "dimensions": {"mass": 1}
+        },
+        "assay_ton": {
+            "name": "Assay Ton",
+            "description": "Equal to 29 1/6 grams, often used to measure the ores of precious metals",
+            "category": "mass",
+            "scale": "2.9166666666666667e-2",
+            "dimensions": {"mass": 1}
+        },
+        "denier": {
+            "name": "Denier",
+            "description": "Linear density used in textiles, the linear density of a single strand of silk is approx. 1 denier",
+            "category": "miscellaneous",
+            "scale": "1.1111111111111112e-7",
+            "dimensions": {"mass": 1, "length": -1}
+        },
+        "tex": {
+            "name": "Tex",
+            "description": "Linear density equal to 1 g / km, mainly used for measuring fiber products",
+            "category": "miscellaneous",
+            "scale": "1e-6",
+            "dimensions": {"mass": 1, "length": -1}
+        },
+        "m": {
+            "name": "Meter",
+            "description": "SI standard unit for length",
+            "category": "length",
+            "scale": "1",
+            "dimensions": {"length": 1}
+        },
+        "ang": {
+            "name": "Angstrom",
+            "description": "Equal to 10^-10 meters, often used to express the size of atoms and molecules",
+            "category": "length",
+            "scale": "1e-10",
+            "dimensions": {"length": 1}
+        },
+        "picapt": {
+            "name": "Pica Point",
+            "description": "Used in typography, equal to 1/12 of a pica",
+            "category": "length",
+            "scale": "3.52777777777778e-4",
+            "dimensions": {"length": 1}
+        },
+        "pica": {
+            "name": "Pica",
+            "description": "Used in typography, equal to 1/6 of an inch",
+            "category": "length",
+            "scale": "4.23333333333333e-3",
+            "dimensions": {"length": 1}
+        },
+        "in": {
+            "name": "Inch",
+            "description": "US and Imperial unit of length equal to 1/12 of a foot",
+            "category": "length",
+            "scale": "2.54e-2",
+            "dimensions": {"length": 1}
+        },
+        "mil": {
+            "name": "Mil",
+            "description": "US and Imperial units for milli-inch, avoids a unit collision with the unit 'min'",
+            "category": "length",
+            "scale": "2.54e-5",
+            "dimensions": {"length": 1}
+        },
+        "ft": {
+            "name": "Foot",
+            "description": "Standard US and Imperial unit of length",
+            "category": "length",
+            "scale": "3.048e-1",
+            "dimensions": {"length": 1}
+        },
+        "yd": {
+            "name": "Yard",
+            "description": "US and Imperial unit of length equal to 3 foot",
+            "category": "length",
+            "scale": "9.144e-1",
+            "dimensions": {"length": 1}
+        },
+        "ell": {
+            "name": "Ell",
+            "description": "Formerly used in the english tayloring industry and defined as a yard and a quarter, now obsolete",
+            "category": "length",
+            "scale": "1.143",
+            "dimensions": {"length": 1}
+        },
+        "mi": {
+            "name": "Mile",
+            "description": "US and Imperial measure of distance equal to 5280 feet or 1,609.344 meters",
+            "category": "length",
+            "scale": "1.609344e3",
+            "dimensions": {"length": 1}
+        },
+        "survey_mi": {
+            "name": "Survey Mile",
+            "description": "US Customary unit equal to 5280 Survey Feet",
+            "category": "length",
+            "scale": "5280*(1200/3937)",
+            "dimensions": {"length": 1}
+        },
+        "nmi": {
+            "name": "Nautical Mile",
+            "description": "Approximately 1/60 of a degree of latitude, formally defined as 1852 meters",
+            "category": "length",
+            "scale": "1.852e3",
+            "dimensions": {"length": 1},
+            "aliases": ["Nmi"]
+        },
+        "league": {
+            "name": "League",
+            "description": "Originally represented the distance a person could walk in one day, the most recent common usage was in maritime where it is equal to 3 nautical miles",
+            "category": "length",
+            "scale": "5.556e3",
+            "dimensions": {"length": 1}
+        },
+        "ly": {
+            "name": "Light Year",
+            "description": "Represents the distance light travels in one year in a vacuum, used in astronomical scales",
+            "category": "length",
+            "scale": "9.4607304725808e15",
+            "dimensions": {"length": 1}
+        },
+        "parsec": {
+            "name": "Parsec",
+            "description": "Defined as 648 000 / pi astronomical units (au)",
+            "category": "length",
+            "scale": "3.08567758128155e16",
+            "dimensions": {"length": 1}
+        },
+        "survey_ft": {
+            "name": "Survey Foot",
+            "description": "Slightly different definition of foot defined as 1200/3937 meters instead of 0.3048 meters",
+            "category": "length",
+            "scale": "(1200/3937)",
+            "dimensions": {"length": 1}
+        },
+        "AU": {
+            "name": "Astronomical Unit",
+            "description": "Approximate distance from the Earth to the Sun",
+            "category": "length",
+            "scale": "1.495978707e11",
+            "dimensions": {"length": 1}
+        },
+        "chain": {
+            "name": "Chain",
+            "description": "US customary unit equal to 66 survey ft, sometimes the unit may be based on the internation foot rather than the survey foot changing the definition slightly",
+            "category": "length",
+            "scale": "66*(1200/3937)",
+            "dimensions": {"length": 1}
+        },
+        "link": {
+            "name": "Link",
+            "description": "US Customary unit of length equal to 1/100 of a chain",
+            "category": "length",
+            "scale": "(66/100)*(1200/3937)",
+            "dimensions": {"length": 1}
+        },
+        "rod": {
+            "name": "Rod",
+            "description": "US Customary unit of length equal to 1/4 of a chain",
+            "category": "length",
+            "scale": "(66/4)*(1200/3937)",
+            "dimensions": {"length": 1}
+        },
+        "furlong": {
+            "name": "Furlong",
+            "description": "US Customary unit of length equal to 10 chains",
+            "category": "length",
+            "scale": "660*(1200/3937)",
+            "dimensions": {"length": 1}
+        },
+        "fathom": {
+            "name": "Fathom",
+            "description": "Equal to 6 international foot, typically used to measure depth in maritime applications",
+            "category": "length",
+            "scale": "1.8288",
+            "dimensions": {"length": 1}
+        },
+        "us_fathom": {
+            "name": "US Fathom",
+            "description": "US Customary Fathom, appox. equal to 6 survey foot",
+            "category": "length",
+            "scale": "6*(1200/3937)",
+            "dimensions": {"length": 1}
+        },
+        "fermi": {
+            "name": "Fermi",
+            "description": "Equal to 10^-15 m, Used in nuclear physics and named after physicist Enrico Fermi who was one of the founders of the field",
+            "category": "length",
+            "scale": "1e-15",
+            "dimensions": {"length": 1}
+        },
+        "datamile": {
+            "name": "Data Mile",
+            "description": "A distance used in radar measurements equal to 6000 international feet",
+            "category": "length",
+            "scale": "1.8288e3",
+            "dimensions": {"length": 1}
+        },
+        "kayser": {
+            "name": "Kayser/Wavenumber",
+            "description": "Reciprocal of 1 cm, used in spectroscopy and chemistry to represent the number of wavelengths per cm",
+            "category": "miscellaneous",
+            "scale": "1e02",
+            "dimensions": {"length": -1}
+        },
+        "s": {
+            "name": "Second",
+            "description": "Approximately 1/86400 of a stellar day, formally defined based on the duration of 9 192 631 770 state transitions of the caesium-133 atom at 0 K",
+            "category": "time",
+            "scale": "1",
+            "dimensions": {"time": 1},
+            "aliases": ["sec"]
+        },
+        "min": {
+            "name": "Minute",
+            "description": "Defined as 60 seconds",
+            "category": "time",
+            "scale": "6e1",
+            "dimensions": {"time": 1}
+        },
+        "hr": {
+            "name": "Hour",
+            "description": "defined as 60 minute",
+            "category": "time",
+            "scale": "3.6e3",
+            "dimensions": {"time": 1}
+        },
+        "day": {
+            "name": "Day",
+            "description": "Approximately equal to the amount of time for the earth to rotate on it's axis, formally defined as 24 hours",
+            "category": "time",
+            "scale": "8.64e4",
+            "dimensions": {"time": 1}
+        },
+        "week": {
+            "name": "Week",
+            "description": "Defined as 7 days",
+            "category": "time",
+            "scale": "6.048e5",
+            "dimensions": {"time": 1}
+        },
+        "fortnight": {
+            "name": "Fortnight",
+            "description": "Amount of time defined as 2 weeks or 14 days",
+            "category": "time",
+            "scale": "1.2096e6",
+            "dimensions": {"time": 1}
+        },
+        "yr": {
+            "name": "Year",
+            "description": "Approximately equal to the amount of time for the earth to make one orbit around the sun, formally defined as 365 days",
+            "category": "time",
+            "scale": "3.1536e7",
+            "dimensions": {"time": 1}
+        },
+        "shake": {
+            "name": "Shake",
+            "description": "Informal metric unit equal to 10^-8 seconds, often used in nuclear physics",
+            "category": "time",
+            "scale": "1e-8",
+            "dimensions": {"time": 1}
+        },
+        "K": {
+            "name": "Kelvin",
+            "description": "SI standard unit with 0 defined as absolute zero",
+            "category": "temperature",
+            "scale": "1",
+            "dimensions": {"temperature": 1},
+            "aliases": ["deltaC"]
+        },
+        "degF": {
+            "name": "Degrees Fahrenheit",
+            "description": "Temperature scale that is approximately 32 at the melting point of ice and 212 at the boiling point of water",
+            "category": "temperature",
+            "scale": "(5/9)",
+            "dimensions": {"temperature": 1},
+            "offset": "273.15-(32*5/9)"
+        },
+        "degC": {
+            "name": "Degrees Celsius",
+            "description": "Temperature unit with a similar scale to Kelvin, but with the 0 approximately defined as the melting point of ice",
+            "category": "temperature",
+            "scale": "1",
+            "dimensions": {"temperature": 1},
+            "offset": "2.7315e2"
+        },
+        "Ra": {
+            "name": "Rankine",
+            "description": "Units with the same scale as Fahrenheit, but with 0 at absolute 0",
+            "category": "temperature",
+            "scale": "(5/9)",
+            "dimensions": {"temperature": 1},
+            "aliases": ["Rank", "deltaF"]
+        },
+        "Reau": {
+            "name": "Reaumur",
+            "description": "Temperature scale that is approximately 0 at the melting point of ice and 80 at the boiling point of water",
+            "category": "temperature",
+            "scale": "1.25",
+            "dimensions": {"temperature": 1},
+            "offset": "2.7315e2"
+        },
+        "deltaReau": {
+            "name": "Delta Reaumur",
+            "description": "Change in temperature as measured in Reaumurs",
+            "category": "temperature",
+            "scale": "1.25",
+            "dimensions": {"temperature": 1}
+        },
+        "kph": {
+            "name": "Kilometer per Hour",
+            "description": "Velocity at which a kilometer is traveled every hour",
+            "category": "velocity",
+            "scale": "1000/3600",
+            "dimensions": {"length": 1, "time": -1}
+        },
+        "mph": {
+            "name": "Mile per Hour",
+            "description": "Velocity at which a mile is traveled every hour",
+            "category": "velocity",
+            "scale": "4.4704e-1",
+            "dimensions": {"length": 1, "time": -1}
+        },
+        "fps": {
+            "name": "Feet per Second",
+            "description": "Velocity where 1 foot is traveled every second",
+            "category": "velocity",
+            "scale": "3.048e-1",
+            "dimensions": {"length": 1, "time": -1}
+        },
+        "knot": {
+            "name": "Knot",
+            "description": "Velocity at which a Nautical mile is traveled every hour ",
+            "category": "velocity",
+            "scale": "5.14444444444444e-1",
+            "dimensions": {"length": 1, "time": -1}
+        },
+        "admkn": {
+            "name": "Admirality Knot",
+            "description": "Knot based on the old UK definition of a Nautical mile (1853.184 m)",
+            "category": "velocity",
+            "scale": "5.14773333333333e-1",
+            "dimensions": {"length": 1, "time": -1}
+        },
+        "c": {
+            "name": "Speed of Light",
+            "description": "velocity defined by how fast light travels in a vacuum",
+            "category": "velocity",
+            "scale": "2.99792458e8",
+            "dimensions": {"length": 1, "time": -1}
+        },
+        "grav": {
+            "name": "Standard Gravity",
+            "description": "Approximate acceleration of gravity at the surface of the earth",
+            "category": "acceleration",
+            "scale": "9.80665",
+            "dimensions": {"length": 1, "time": -2}
+        },
+        "galileo": {
+            "name": "Galileo",
+            "description": "CGS system standard unit for acceleration",
+            "category": "acceleration",
+            "scale": "1e-2",
+            "dimensions": {"length": 1, "time": -2}
+        },
+        "Pa": {
+            "name": "Pascal",
+            "description": "SI standard unit for pressure defined as 1 N/m^2",
+            "category": "pressure",
+            "scale": "1",
+            "dimensions": {"mass": 1, "length": -1, "time": -2}
+        },
+        "mHg": {
+            "name": "Meter of Mercury",
+            "description": "The pressure applied by 1 m of mercury at 1 standard gravity, more commonly used as mmHg or cmHg",
+            "category": "pressure",
+            "scale": "1.3332239e5",
+            "dimensions": {"mass": 1, "length": -1, "time": -2}
+        },
+        "mH2O": {
+            "name": "Meter of Water",
+            "description": "The pressure applied by 1 m of water at 1 standard gravity, more commonly used as mmH2O or cmH2O",
+            "category": "pressure",
+            "scale": "9.80665e3",
+            "dimensions": {"mass": 1, "length": -1, "time": -2}
+        },
+        "Torr": {
+            "name": "Torr",
+            "description": "Slightly different definition of mmHg, but very close to the same scale",
+            "category": "pressure",
+            "scale": "1.33322368421053e2",
+            "dimensions": {"mass": 1, "length": -1, "time": -2}
+        },
+        "psi": {
+            "name": "Pound per Square Inch",
+            "description": "US and Imperial unit of pressure defined as 1 lbf / in^2",
+            "category": "pressure",
+            "scale": "6.89475729316836e3",
+            "dimensions": {"mass": 1, "length": -1, "time": -2}
+        },
+        "atm": {
+            "name": "Atmosphere",
+            "description": "Approximately the mean air pressure at sea level",
+            "category": "pressure",
+            "scale": "1.01325e5",
+            "dimensions": {"mass": 1, "length": -1, "time": -2}
+        },
+        "bar": {
+            "name": "Bar",
+            "description": "Defined as 100 000 Pa, which is very close to 1 atmosphere",
+            "category": "pressure",
+            "scale": "1e5",
+            "dimensions": {"mass": 1, "length": -1, "time": -2}
+        },
+        "inHg": {
+            "name": "Inch of Mercury",
+            "description": "The pressure applied by 1 inch of mercury at 1 standard gravity",
+            "category": "pressure",
+            "scale": "3.3863886666667e3",
+            "dimensions": {"mass": 1, "length": -1, "time": -2}
+        },
+        "inH2O": {
+            "name": "Inch of Water",
+            "description": "The pressure applied by 1 inch of water at 1 standard gravity",
+            "category": "pressure",
+            "scale": "2.4908891e2",
+            "dimensions": {"mass": 1, "length": -1, "time": -2}
+        },
+        "ftHg": {
+            "name": "Foot of Mercury",
+            "description": "The pressure applied by 1 foot of mercury at 1 standard gravity",
+            "category": "pressure",
+            "scale": "4.0636664e4",
+            "dimensions": {"mass": 1, "length": -1, "time": -2}
+        },
+        "ftH2O": {
+            "name": "Foot of Water",
+            "description": "The pressure applied by 1 foot of water at 1 standard gravity",
+            "category": "pressure",
+            "scale": "2.98906692e3",
+            "dimensions": {"mass": 1, "length": -1, "time": -2}
+        },
+        "Ba": {
+            "name": "Barye",
+            "description": "CGS standard unit for pressure",
+            "category": "pressure",
+            "scale": "1e-1",
+            "dimensions": {"mass": 1, "length": -1, "time": -2}
+        },
+        "Pa-g": {
+            "name": "Gauge Pascal",
+            "description": "Pascal with a zero offset at atmospheric pressure",
+            "category": "pressure",
+            "scale": "1",
+            "dimensions": {"mass": 1, "length": -1, "time": -2},
+            "offset": "1.01325e5"
+        },
+        "bar-g": {
+            "name": "Gauge Bar",
+            "description": "Bar with a zero offset at atmospheric pressure",
+            "category": "pressure",
+            "scale": "1e5",
+            "dimensions": {"mass": 1, "length": -1, "time": -2},
+            "offset": "1.01325e5"
+        },
+        "psi-g": {
+            "name": "Gauge PSI",
+            "description": "psi with a zero offset at atmospheric pressure",
+            "category": "pressure",
+            "scale": "6.89475729316836e3",
+            "dimensions": {"mass": 1, "length": -1, "time": -2},
+            "offset": "1.01325e5"
+        },
+        "N": {
+            "name": "Newton",
+            "description": "SI standard unit for force defined as 1 kg m / s^2",
+            "category": "force",
+            "scale": "1",
+            "dimensions": {"mass": 1, "length": 1, "time": -2}
+        },
+        "dyn": {
+            "name": "Dyne",
+            "description": "CGS standard unit for force defined as 1 g [c]m / s^2",
+            "category": "force",
+            "scale": "1e-5",
+            "dimensions": {"mass": 1, "length": 1, "time": -2}
+        },
+        "gf": {
+            "name": "Gram Force",
+            "description": "Defined as the amount of force exerted by standard gravity on a 1 gram mass",
+            "category": "force",
+            "scale": "9.80665e-3",
+            "dimensions": {"mass": 1, "length": 1, "time": -2},
+            "aliases": ["pond"]
+        },
+        "lbf": {
+            "name": "Pound Force",
+            "description": "Defined as the amount of force exerted by standard gravity on a 1 lbm mass",
+            "category": "force",
+            "scale": "4.4482216152605",
+            "dimensions": {"mass": 1, "length": 1, "time": -2}
+        },
+        "ozf": {
+            "name": "Ounce Force",
+            "description": "Equal to 1/16 lbf",
+            "category": "force",
+            "scale": "2.78013850953781e-1",
+            "dimensions": {"mass": 1, "length": 1, "time": -2}
+        },
+        "pdl": {
+            "name": "Poundal",
+            "description": "Force unit in the foot-pound-second system equal to 1 lbm ft / s^2",
+            "category": "force",
+            "scale": "1.38254954376e-1",
+            "dimensions": {"mass": 1, "length": 1, "time": -2}
+        },
+        "ton-force": {
+            "name": "Ton Force",
+            "description": "Equal to 2000 lbf",
+            "category": "force",
+            "scale": "8.896443230521e3",
+            "dimensions": {"mass": 1, "length": 1, "time": -2}
+        },
+        "J": {
+            "name": "Joule",
+            "description": "SI standard unit for energy defined as 1 N m",
+            "category": "energy",
+            "scale": "1",
+            "dimensions": {"mass": 1, "length": 2, "time": -2}
+        },
+        "eV": {
+            "name": "Electron Volt",
+            "description": "Energy gain of an electron after passing through a 1 Volt potential",
+            "category": "energy",
+            "scale": "1.602176487e-19",
+            "dimensions": {"mass": 1, "length": 2, "time": -2}
+        },
+        "erg": {
+            "name": "Erg",
+            "description": "CGS standard unit of energy defined as 1 dyn cm ",
+            "category": "energy",
+            "scale": "1e-7",
+            "dimensions": {"mass": 1, "length": 2, "time": -2}
+        },
+        "cal": {
+            "name": "Calorie",
+            "description": "Based on the amount of energy needed to raise the temperature of 1 kg of water 1 degree Celsius, defined in The Fifth International Conference on the Properties of Steam (London, July 1956) 'International Table'",
+            "category": "energy",
+            "scale": "4.1868",
+            "dimensions": {"mass": 1, "length": 2, "time": -2}
+        },
+        "Cal": {
+            "name": "Kilo-calorie",
+            "description": "Commonly used to measure the energy in food in the US, equal to 1000 calories and often refered to as a 'calorie' rather than a kilo-calorie",
+            "category": "energy",
+            "scale": "4.1868e3",
+            "dimensions": {"mass": 1, "length": 2, "time": -2}
+        },
+        "BTU": {
+            "name": "British Thermal Unit",
+            "description": "Based on the amount of energy needed to raise the temperature of 1 lbm of water 1 degree Fahrenheit, defined in The Fifth International Conference on the Properties of Steam (London, July 1956) 'International Table'",
+            "category": "energy",
+            "scale": "1.05505585e3",
+            "dimensions": {"mass": 1, "length": 2, "time": -2}
+        },
+        "thm": {
+            "name": "Therm",
+            "description": "Unit of energy equal to 100 000 BTU, approximately the energy equivalent of burning 100 ft^3 of natural gas",
+            "category": "energy",
+            "scale": "1.05505585e8",
+            "dimensions": {"mass": 1, "length": 2, "time": -2}
+        },
+        "Wh": {
+            "name": "Watt-hour",
+            "description": "Amount of energy dissipated by 1 Watt source over an hour",
+            "category": "energy",
+            "scale": "3.6e3",
+            "dimensions": {"mass": 1, "length": 2, "time": -2}
+        },
+        "HPh": {
+            "name": "Horse Power Hour",
+            "description": "Amount of energy dissipated by a 1 HP source over an hour",
+            "category": "energy",
+            "scale": "2.68451953769617e6",
+            "dimensions": {"mass": 1, "length": 2, "time": -2}
+        },
+        "ft-lb": {
+            "name": "Foot Pound-force",
+            "description": "Defined as 1 ft x 1 lbf, typically used to describe torques rather than energy",
+            "category": "energy",
+            "scale": "1.3558179483314",
+            "dimensions": {"mass": 1, "length": 2, "time": -2},
+            "aliases": ["ft-lbf"]
+        },
+        "RSI": {
+            "name": "R Value (SI)",
+            "description": "Thermal insulation defined as 1 K m^2 / W",
+            "category": "insulation",
+            "scale": "1",
+            "dimensions": {"mass": -1, "time": 3, "temperature": 1}
+        },
+        "RIP": {
+            "name": "R Value (Foot Pound)",
+            "description": "Thermal insulation defined as 1 Ra ft^2 hr / BTU",
+            "category": "insulation",
+            "scale": "1.7611018368230189e-1",
+            "dimensions": {"mass": -1, "time": 3, "temperature": 1}
+        },
+        "clo": {
+            "name": "Clothing",
+            "description": "Thermal insulation unit used in clothing design, defined as the amount of insulation that allows a person at rest to maintain thermal equilibrium in an 21 degC, normally ventilated room",
+            "category": "insulation",
+            "scale": "1.55e-1",
+            "dimensions": {"mass": -1, "time": 3, "temperature": 1}
+        },
+        "tog": {
+            "name": "Tog",
+            "description": "Thermal insulation unit defined as exactly 0.1 K m^2 / W",
+            "category": "insulation",
+            "scale": "1e-1",
+            "dimensions": {"mass": -1, "time": 3, "temperature": 1}
+        },
+        "W": {
+            "name": "Watt",
+            "description": "SI standard unit for energy, defined as 1 J / s",
+            "category": "power",
+            "scale": "1",
+            "dimensions": {"mass": 1, "length": 2, "time": -3}
+        },
+        "PS": {
+            "name": "Metric Horsepower",
+            "description": "Defined as the amount of power to raise a mass of 75 kg against standard gravity over a distance of 1 meter in one second",
+            "category": "power",
+            "scale": "7.3549875e2",
+            "dimensions": {"mass": 1, "length": 2, "time": -3}
+        },
+        "HP": {
+            "name": "Mechanical Horsepower",
+            "description": "Defined as 33 000 ft lbf / min",
+            "category": "power",
+            "scale": "7.4569987158227e2",
+            "dimensions": {"mass": 1, "length": 2, "time": -3}
+        },
+        "P": {
+            "name": "Poise",
+            "description": "CGS unit for dynamic viscosity",
+            "category": "miscellaneous",
+            "scale": "1e-1",
+            "dimensions": {"mass": 1, "length": -1, "time": -1}
+        },
+        "rhe": {
+            "name": "Rhe",
+            "description": "CGS unit for fluidity, equal to exactly 1 P^-1",
+            "category": "miscellaneous",
+            "scale": "1e1",
+            "dimensions": {"mass": -1, "length": 1, "time": 1}
+        },
+        "St": {
+            "name": "Stokes",
+            "description": "CGS unit for kinematic viscosity",
+            "category": "miscellaneous",
+            "scale": "1e-4",
+            "dimensions": {"length": 2, "time": -1}
+        },
+        "L": {
+            "name": "Liter",
+            "description": "Volume defined as 1 [d]m^3 or 10^-3 m^3",
+            "category": "volume",
+            "scale": "1e-3",
+            "dimensions": {"length": 3}
+        },
+        "tsp": {
+            "name": "Teaspoon",
+            "description": "US Customary volume unit that is close to 5 mL",
+            "category": "volume",
+            "scale": "4.92892159375e-6",
+            "dimensions": {"length": 3}
+        },
+        "tspm": {
+            "name": "Metric Teaspoon",
+            "description": "Based on the US Teaspoon, but defined as exactly 5 mL",
+            "category": "volume",
+            "scale": "5e-6",
+            "dimensions": {"length": 3}
+        },
+        "tbs": {
+            "name": "Tablespoon",
+            "description": "US Customary volume unit that is defined as 3 tsp",
+            "category": "volume",
+            "scale": "1.478676478125e-5",
+            "dimensions": {"length": 3}
+        },
+        "fl_oz": {
+            "name": "Fluid Ounce",
+            "description": "US Customary volume unit that is defined as 2 tbs",
+            "category": "volume",
+            "scale": "2.95735295625e-5",
+            "dimensions": {"length": 3}
+        },
+        "uk_fl_oz": {
+            "name": "UK Fluid Ounce",
+            "description": "Imperial unit approximately equal to the volume of 1 avoirdupois ounce of water",
+            "category": "volume",
+            "scale": "2.84130625e-5",
+            "dimensions": {"length": 3}
+        },
+        "cup": {
+            "name": "Cup",
+            "description": "US Customary volume unit that is defined as 8 fluid ounces",
+            "category": "volume",
+            "scale": "2.365882365e-4",
+            "dimensions": {"length": 3}
+        },
+        "pt": {
+            "name": "Pint",
+            "description": "US Customary volume unit that is defined as 2 cups",
+            "category": "volume",
+            "scale": "4.73176473e-4",
+            "dimensions": {"length": 3}
+        },
+        "uk_pt": {
+            "name": "UK Pint",
+            "description": "Imperial volume unit defined as 20 imperial ounces",
+            "category": "volume",
+            "scale": "5.6826125e-4",
+            "dimensions": {"length": 3}
+        },
+        "qt": {
+            "name": "Quart",
+            "description": "US Customary volume unit that is defined as 2 pints",
+            "category": "volume",
+            "scale": "9.46352946e-4",
+            "dimensions": {"length": 3}
+        },
+        "uk_qt": {
+            "name": "UK Quart",
+            "description": "Imperial volume unit defined as 2 UK pints",
+            "category": "volume",
+            "scale": "1.1365225e-3",
+            "dimensions": {"length": 3}
+        },
+        "gal": {
+            "name": "Gallon",
+            "description": "US Customary volume unit that is defined as 4 quarts",
+            "category": "volume",
+            "scale": "3.785411784e-3",
+            "dimensions": {"length": 3}
+        },
+        "uk_gal": {
+            "name": "UK Gallon",
+            "description": "Imperial volume unit defined as 4 UK quarts",
+            "category": "volume",
+            "scale": "4.54609e-3",
+            "dimensions": {"length": 3}
+        },
+        "bushel": {
+            "name": "Bushel",
+            "description": "Very old unit of volume that is associated with agricultural production, about 2150.42 in^3",
+            "category": "volume",
+            "scale": "3.523907016688e-2",
+            "dimensions": {"length": 3}
+        },
+        "bbl": {
+            "name": "Oil Barrel",
+            "description": "Defined internationally as 42 US Gallons, typically used in the oil industry",
+            "category": "volume",
+            "scale": "1.58987294928e-1",
+            "dimensions": {"length": 3},
+            "aliases": ["oilbarrel"]
+        },
+        "beerbarrel": {
+            "name": "US Beer Barrel",
+            "description": "Volume associated with beer trade in the US, equal to 31 US Gallons",
+            "category": "volume",
+            "scale": "1.17347765304e-1",
+            "dimensions": {"length": 3}
+        },
+        "uk_beerbarrel": {
+            "name": "Imperial Beer Barrel",
+            "description": "Appoximate volume of a barrel used for transporting beer in the UK, equal to 36 imperial gallons",
+            "category": "volume",
+            "scale": "1.6365924e-1",
+            "dimensions": {"length": 3}
+        },
+        "MTON": {
+            "name": "Measurement Ton",
+            "description": "Commonly used in the freight industry, equal to 40 ft^3",
+            "category": "volume",
+            "scale": "1.13267386368",
+            "dimensions": {"length": 3}
+        },
+        "GRT": {
+            "name": "Gross Register Tonnage",
+            "description": "commonly used in the freight industry equal to 100 ft^3",
+            "category": "volume",
+            "scale": "2.8316846592",
+            "dimensions": {"length": 3}
+        },
+        "gill": {
+            "name": "Gill",
+            "description": "US Customary unit of volume equal to 4 US fluid ounces",
+            "category": "volume",
+            "scale": "1.1829411825e-4",
+            "dimensions": {"length": 3}
+        },
+        "uk_gill": {
+            "name": "UK Gill",
+            "description": "Imperial unit equal to 5 Imperial (UK) fluid ounces",
+            "category": "volume",
+            "scale": "1.420653125e-4",
+            "dimensions": {"length": 3}
+        },
+        "peck": {
+            "name": "Peck",
+            "description": "US Customary unit for non-fluid volume, defined as 2 dry gallons",
+            "category": "volume",
+            "scale": "8.80976754172e-3",
+            "dimensions": {"length": 3}
+        },
+        "dry_gal": {
+            "name": "Dry Gallon",
+            "description": "US Customary unit for non-fluid volume, defined as exactly 268.8025 cubic inches",
+            "category": "volume",
+            "scale": "4.40488377086e-3",
+            "dimensions": {"length": 3}
+        },
+        "dry_qt": {
+            "name": "Dry Quart",
+            "description": "US Customary unit for non-fluid volume, defined as 1/4 of a dry gallon",
+            "category": "volume",
+            "scale": "1.101220942715e-3",
+            "dimensions": {"length": 3}
+        },
+        "dry_pt": {
+            "name": "Dry Pint",
+            "description": "US Customary unit for non-fluid volume, defined as 1/8 of a dry gallon",
+            "category": "volume",
+            "scale": "5.506104713575e-4",
+            "dimensions": {"length": 3}
+        },
+        "stere": {
+            "name": "Stere",
+            "description": "Equal to exactly 1 m^3, typically used to measure large quantities of firewood",
+            "category": "volume",
+            "scale": "1",
+            "dimensions": {"length": 3}
+        },
+        "ar": {
+            "name": "Are",
+            "description": "Equal to 1/100 hectares or 100 m^2",
+            "category": "area",
+            "scale": "1e2",
+            "dimensions": {"length": 2}
+        },
+        "morgen": {
+            "name": "Morgen",
+            "description": "Traditionally the area able to be plowed in a single day by a single bladed plow and an ox or horse, it now is approximately equal to 1/4 of a hectare",
+            "category": "area",
+            "scale": "2.5e3",
+            "dimensions": {"length": 2}
+        },
+        "acre": {
+            "name": "Acre",
+            "description": "Traditionally defined as the amount of area that could be plowed in one day by a yoke of oxen, still in use in the US",
+            "category": "area",
+            "scale": "4.04687260987425e3",
+            "dimensions": {"length": 2},
+            "aliases": ["us_acre"]
+        },
+        "uk_acre": {
+            "name": "UK Acre",
+            "description": "Slightly different than the US Acre, used in the UK until 1995",
+            "category": "area",
+            "scale": "4.0468564224e3",
+            "dimensions": {"length": 2}
+        },
+        "ha": {
+            "name": "Hectare",
+            "description": "Internationally used metric unit for measurement of the area of land, equal to 1000 m^3",
+            "category": "area",
+            "scale": "1e4",
+            "dimensions": {"length": 2}
+        },
+        "barn": {
+            "name": "Barn",
+            "description": "Equal to 10^-28 m^2, originally used in nuclear physics for expressing the cross sectional area of nuclei and nuclear reactions",
+            "category": "area",
+            "scale": "1e-28",
+            "dimensions": {"length": 2}
+        },
+        "b": {
+            "name": "Bit",
+            "description": "Basic unit of information that can take one of 2 states (on/off, 0/1, high/low)",
+            "category": "information",
+            "scale": "1",
+            "dimensions": {"information": 1},
+            "aliases": ["bit"]
+        },
+        "B": {
+            "name": "Byte",
+            "description": "Equal to 8 bits of information, commonly used in modern computing architectures",
+            "category": "information",
+            "scale": "8",
+            "dimensions": {"information": 1},
+            "aliases": ["byte"]
+        },
+        "word": {
+            "name": "Word",
+            "description": "Equal to 16 bits or 2 bytes",
+            "category": "information",
+            "scale": "16",
+            "dimensions": {"information": 1}
+        },
+        "dword": {
+            "name": "Double Word",
+            "description": "Equal to 32 bits, 4 bytes or 2 words",
+            "category": "information",
+            "scale": "32",
+            "dimensions": {"information": 1}
+        },
+        "baud": {
+            "name": "Baud Rate",
+            "description": "Rate of data transmission equal to 1 bit / second",
+            "category": "information",
+            "scale": "1",
+            "dimensions": {"information": 1, "time": -1}
+        },
+        "A": {
+            "name": "Ampere",
+            "description": "SI standard unit for electric current, equal to 1 C/s",
+            "category": "electricity and magnetism",
+            "scale": "1",
+            "dimensions": {"current": 1}
+        },
+        "C": {
+            "name": "Coulomb",
+            "description": "SI standard unit for electric charge defined as the amount of charge of exactly 6.2415093e18 elementary charges",
+            "category": "electricity and magnetism",
+            "scale": "1",
+            "dimensions": {"current": 1, "time": 1}
+        },
+        "Ah": {
+            "name": "Amp Hour",
+            "description": "Charge collected from 1 Amp over 1 hour",
+            "category": "electricity and magnetism",
+            "scale": "3.6e3",
+            "dimensions": {"current": 1, "time": 1}
+        },
+        "e": {
+            "name": "Elementary Charge",
+            "description": "The electric charge carried by a single proton",
+            "category": "electricity and magnetism",
+            "scale": "1.602176634e-19",
+            "dimensions": {"current": 1, "time": 1}
+        },
+        "V": {
+            "name": "Volt",
+            "description": "Derived SI unit for electric potential, can be defined as J/C",
+            "category": "electricity and magnetism",
+            "scale": "1",
+            "dimensions": {"mass": 1, "length": 2, "current": -1, "time": -3}
+        },
+        "ohm": {
+            "name": "Ohm",
+            "description": "Derived SI unit for electrical resistance",
+            "category": "electricity and magnetism",
+            "scale": "1",
+            "dimensions": {"mass": 1, "length": 2, "current": -2, "time": -3}
+        },
+        "F": {
+            "name": "Farad",
+            "description": "Derived SI unit of electrical capacitance",
+            "category": "electricity and magnetism",
+            "scale": "1",
+            "dimensions": {"time": 4, "current": 2, "length": -2, "mass": -1}
+        },
+        "H": {
+            "name": "Henry",
+            "description": "Derived SI unit for inductance",
+            "category": "electricity and magnetism",
+            "scale": "1",
+            "dimensions": {"length": 2, "mass": 1, "time": -2, "current": -2}
+        },
+        "S": {
+            "name": "Siemens",
+            "description": "Derived SI unit for electrical conductance, equal to 1 / ohm",
+            "category": "electricity and magnetism",
+            "scale": "1",
+            "dimensions": {"time": 3, "current": 2, "length": -2, "mass": -1},
+            "aliases": ["mho"]
+        },
+        "Wb": {
+            "name": "Weber",
+            "description": "SI unit for magnetic flux defined as 1 kg m^2 / (s^2 A)",
+            "category": "electricity and magnetism",
+            "scale": "1",
+            "dimensions": {"mass": 1, "length":2, "time": -2, "current": -1}
+        },
+        "Mx": {
+            "name": "Maxwell",
+            "description": "CGS unit for magnetic flux defined as 1 g cm^2 / (s^2 A)",
+            "category": "electricity and magnetism",
+            "scale": "1e-8",
+            "dimensions": {"mass": 1, "length": 2, "time": -2, "current": -1}
+        },
+        "T": {
+            "name": "Tesla",
+            "description": "SI unit for magnetic flux density defined as 1 Wb / m^2",
+            "category": "electricity and magnetism",
+            "scale": "1",
+            "dimensions": {"mass": 1, "current": -1, "time": -2}
+        },
+        "Gs": {
+            "name": "Gauss",
+            "description": "CGS unit for magnetic flux density defined as 1 Mx / cm^2",
+            "category": "electricity and magnetism",
+            "scale": "1e-4",
+            "dimensions": {"mass": 1, "current": -1, "time": -2},
+            "aliases": ["gs"]
+        },
+        "Fr": {
+            "name": "Franklin",
+            "description": "Standard unit of electrical charge in the EMU-CGS units of measure",
+            "category": "electricity and magnetism",
+            "scale": "3.3356409519815207e-10",
+            "dimensions": {"current": 1, "time": 1}
+        },
+        "Gi": {
+            "name": "Gilbert",
+            "description": "Obsolete unit used in EMU-CGS systems to measure magnetization, dimensionally equivalent to the Amp",
+            "category": "electricity and magnetism",
+            "scale": "7.957747e-1",
+            "dimensions": {"current": 1}
+        },
+        "Oe": {
+            "name": "Oersted",
+            "description": "CGS unit of auxiliary magnetic field",
+            "category": "electricity and magnetism",
+            "scale": "1000/(4*Math.PI)",
+            "dimensions": {"current": 1, "length": -1}
+        },
+        "mol": {
+            "name": "Mole",
+            "description": "SI standard unit for an amount of substance, defined as exactly 6.02214076e23 elementary entities (usually molecules)",
+            "category": "substance",
+            "scale": "1",
+            "dimensions": {"substance": 1}
+        },
+        "molar": {
+            "name": "Molar Concentration",
+            "description": "Amount of substance per Liter of solution",
+            "category": "substance",
+            "scale": "1e3",
+            "dimensions": {"substance": 1, "length": -3},
+            "aliases": ["M"]
+        },
+        "kat": {
+            "name": "Katal",
+            "description": "Unit of catalytic activity, defined as 1 mol / sec",
+            "category": "substance",
+            "scale": "1",
+            "dimensions": {"substance": 1, "time": -1}
+        },
+        "U": {
+            "name": "Enzyme",
+            "description": "Unit of catalytic activity, defined as 1 [u]mol / min",
+            "category": "substance",
+            "scale": "1.6666666666666667e-8",
+            "dimensions": {"substance": 1, "time": -1}
+        },
+        "cd": {
+            "name": "Candela",
+            "description": "SI standard unit for luminous intensity in a given direction defined by taking the fixed numerical value of the luminous efficacy of monochromatic radiation of frequency 540e12 Hz",
+            "category": "luminosity",
+            "scale": "1",
+            "dimensions": {"luminosity": 1}
+        },
+        "lm": {
+            "name": "Lumen",
+            "description": "SI derived unit of luminous flux, a measure of the total quantity of visible light emitted by a source. 1 lm = 1 cd sr",
+            "category": "luminosity",
+            "scale": "1",
+            "dimensions": {"luminosity": 1}
+        },
+        "lx": {
+            "name": "Lux",
+            "description": "SI derived unit of illuminance, measuring luminous flux per unit area. 1 lx = 1 lm/m^2)",
+            "category": "luminosity",
+            "scale": "1",
+            "dimensions": {"luminosity": 1, "length": -2}
+        },
+        "footcandle": {
+            "name": "Footcandle",
+            "description": "",
+            "category": "luminosity",
+            "scale": "1/Math.pow(3.048e-1,2)",
+            "dimensions": {"luminosity": 1, "length": -2}
+        },
+        "footlambert": {
+            "name": "Footlambert",
+            "description": "Non-SI unit of illuminance or light intensity. 1 footcandle = 1 lm / ft^2",
+            "category": "luminosity",
+            "scale": "(1/Math.PI)/(Math.pow(3.048e-1,2))",
+            "dimensions": {"luminosity": 1, "length": -2}
+        },
+        "lambert": {
+            "name": "Lambert",
+            "description": "Non-SI unit of luminance. 1 lambert = 1/π cd / cm^2",
+            "category": "luminosity",
+            "scale": "(1/Math.PI)*10000",
+            "dimensions": {"luminosity": 1, "length": -2}
+        },
+        "phot": {
+            "name": "Phot",
+            "description": "CGS unit of illuminance",
+            "category": "luminosity",
+            "scale": "1e4",
+            "dimensions": {"luminosity": 1, "length": -2}
+        },
+        "stilb": {
+            "name": "Stilb",
+            "description": "CGS unit of luminance",
+            "category": "luminosity",
+            "scale": "1e4",
+            "dimensions": {"luminosity": 1, "length": -2}
+        },
+        "rad": {
+            "name": "Radian",
+            "description": "Defined as the ratio of the radius of a circular arc to the radius of the arc, typically used to describe angles",
+            "category": "rotation",
+            "scale": "1",
+            "dimensions": {}
+        },
+        "sr": {
+            "name": "Steradians",
+            "description": "A 'square radian' is a unit of solid angle analogous to the radian, a solid angle of 1 sr projected onto a unit sphere will have unit area",
+            "category": "rotation",
+            "scale": "1",
+            "dimensions": {}
+        },
+        "rev": {
+            "name": "Revolution",
+            "description": "Angle describing one full revolution around an axis",
+            "category": "rotation",
+            "scale": "2*Math.PI",
+            "dimensions": {}
+        },
+        "deg": {
+            "name": "Degree",
+            "description": "Angle measurement equal to 1/360 of a revolution",
+            "category": "rotation",
+            "scale": "(1/180)*Math.PI",
+            "dimensions": {}
+        },
+        "arcmin": {
+            "name": "Arc Minute",
+            "description": "Angle measurement defined as 1/60 of a degree",
+            "category": "rotation",
+            "scale": "(1/60)*(1/180)*Math.PI",
+            "dimensions": {}
+        },
+        "arcsec": {
+            "name": "Arc Second",
+            "description": "Angle measurement defined as 1/60 of a arc minue",
+            "category": "rotation",
+            "scale": "(1/3600)*(1/180)*Math.PI",
+            "dimensions": {}
+        },
+        "rpm": {
+            "name": "Revolutions per Minute",
+            "description": "Rotational frequency describing the number of revolution around an axis in a minute",
+            "category": "rotation",
+            "scale": "(2*Math.PI)/60",
+            "dimensions": {"time": -1}
+        },
+        "Hz": {
+            "name": "Hertz",
+            "description": "Frequency defined as 1 (cycle or rotation) / sec",
+            "category": "miscellaneous",
+            "scale": "2*Math.PI",
+            "dimensions": {"time": -1}
+        },
+        "Bq": {
+            "name": "Becquerel",
+            "description": "SI derived unit for radiation activity",
+            "category": "radiology",
+            "scale": "1",
+            "dimensions": {"time": -1}
+        },
+        "Gy": {
+            "name": "Gray",
+            "description": "SI derived unit for radiation absorbed dose",
+            "category": "radiology",
+            "scale": "1",
+            "dimensions": {"length": 2, "time": -2}
+        },
+        "Sv": {
+            "name": "Sievert",
+            "description": "SI unit for radiation equivalent dose, although dimensionally equivalent to Gy, it also includes a weighting function for types of radiation effects on human cells, and is thus not exactly equal",
+            "category": "radiology",
+            "scale": "1",
+            "dimensions": {"length": 2, "time": -2}
+        },
+        "R": {
+            "name": "Rontgen",
+            "description": "Conventional unit for radiation exposure",
+            "category": "radiology",
+            "scale": "2.58e-4",
+            "dimensions": {"current": 1, "time": 1, "mass": -1}
+        },
+        "RAD": {
+            "name": "Radiation Absorbed Dose",
+            "description": "Conventional unit for radiation absorbed dose",
+            "category": "radiology",
+            "scale": "1e-2",
+            "dimensions": {"length": 2, "time": -2}
+        },
+        "rem": {
+            "name": "Roentgen Equivalent Man",
+            "description": "Conventional unit for radiation equivalent dose",
+            "category": "radiology",
+            "scale": "1e-2",
+            "dimensions": {"length": 2, "time": -2}
+        },
+        "Ci": {
+            "name": "Curie",
+            "description": "Conventional unit for radiation activity",
+            "category": "radiology",
+            "scale": "3.7e10",
+            "dimensions": {"time": -1}
+        }
+    }
+}

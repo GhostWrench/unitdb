@@ -1,0 +1,96 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "description": "Schema for the unit database JSON file",
+    "type": "object",
+    "required": [
+        "prefixes",
+        "units"
+    ],
+    "additionalProperties": {"type": "string"},
+    "properties": {
+        "prefixes": {
+            "description": "Prefixes that are prepended to units to modify magnitude",
+            "type": "object",
+            "additionalProperties": {"$ref": "#/definitions/prefix"}
+        },
+        "units": {
+            "description": "Unit definitions with information needed to use",
+            "type": "object",
+            "additionalProperties": {"$ref": "#/definitions/unit"}
+        }
+    },
+    "definitions": {
+        "prefix": {
+            "type": "object",
+            "required": [
+                "name",
+                "scale"
+            ],
+            "properties": {
+                "name": {"type": "string"},
+                "scale": {"type": "string"}
+            }
+        },
+        "unit": {
+            "description": "Schema for a single unit",
+            "type": "object",
+            "required": [
+                "name",
+                "description",
+                "scale",
+                "dimensions",
+                "category"
+            ],
+            "properties": {
+                "name": {"type": "string"},
+                "description": {"type": "string"},
+                "scale": {"type": "string"},
+                "category": {
+                    "type": "string",
+                    "enum": [
+                        "unitless",
+                        "mass",
+                        "length",
+                        "area",
+                        "volume",
+                        "time",
+                        "temperature",
+                        "velocity",
+                        "acceleration",
+                        "pressure",
+                        "force",
+                        "power",
+                        "energy",
+                        "insulation",
+                        "electricity and magnetism",
+                        "information",
+                        "substance",
+                        "luminosity",
+                        "rotation",
+                        "radiology",
+                        "miscellaneous"
+                    ]
+                },
+                "offset": {"type": "string"},
+                "aliases": {
+                    "type": "array",
+                    "items": {"type": "string"}
+                },
+                "dimensions": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                        "mass": {"type": "integer"},
+                        "length": {"type": "integer"},
+                        "time": {"type": "integer"},
+                        "temperature": {"type": "integer"},
+                        "current": {"type": "integer"},
+                        "substance": {"type": "integer"},
+                        "luminosity": {"type": "integer"},
+                        "information": {"type": "integer"}
+                    }
+                }
+            }
+        }
+    }
+}

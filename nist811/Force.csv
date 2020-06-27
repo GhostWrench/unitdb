@@ -1,0 +1,21 @@
+Convert From, Convert To, Multiply By, Supported
+dyn, N, 1.0e-05, true
+[k]gf (kilogram-force), N, 9.80665e+00, true
+[k]pond, N, 9.80665e+00, true
+[k]lbf (kip), N, 4.448222e+03, true
+[k]lbf, [k]N, 4.448222e+00, true
+ozf, N, 2.780139e-01, true
+pdl (poundal), N, 1.382550e-01, true
+lbf, N, 4.448222e+00, true
+lbf / lbm, N / [k]g, 9.80665e+00, true
+ton-force, N, 8.896443e+03, true
+lbf / ft, N / m, 1.459390e+01, true
+lbf / in, N / m, 1.751268e+02, true
+dyn [c]m, N m, 1.0e-07, true
+[k]pond m, N m, 9.80665e+00, true
+ozf in, N m, 7.061552e-03, true
+ozf in, [m]N m, 7.061552e+00, true
+lbf ft, N m, 1.355818e+00, true
+lbf in, N m, 1.129848e-01, true
+lbf ft / in, N m / m, 5.337866e+01, true
+lbf in / in, N m / m, 4.448222e+00, true

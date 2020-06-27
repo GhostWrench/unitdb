@@ -1,0 +1,9 @@
+Convert From, Convert To, Multiply By, Supported
+erg / s, W, 1.0e-07, true
+ft lbf / hr, W, 3.766161e-04, true
+ft lbf / min, W, 2.259697e-02, true
+ft lbf / s, W, 1.355818e+00, true
+HP, W, 7.456999e+02, true
+erg / [c]m^2 s, W / m^2, 1.0e-03, true
+W / [c]m^2, W / m^2, 1.0e+04, true
+W / in^2, W / m^2, 1.550003e+03, true

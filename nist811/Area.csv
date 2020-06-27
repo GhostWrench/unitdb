@@ -1,0 +1,13 @@
+Convert From, Convert To, Multiply By, Supported
+acre, m^2, 4.046873e+03, true
+ar, m^2, 1.0e+02, true
+barn, m^2, 1.0e-28, true
+circular_mil, m^2, 5.067075e-10, false
+ft^4, m^4, 8.630975e-03, true
+ha (hectare), m^2, 1.0e+04, true
+in^4, m^4, 4.162314e-07, true
+ft^2, m^2, 9.290304e-02, true
+in^2, m^2, 6.4516e-04, true
+mi^2, m^2, 2.589988e+06, true
+survey_mi^2, [k]m^2, 2.589998e+00, true
+yd^2, m^2, 8.361274e-01, true

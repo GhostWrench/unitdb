@@ -1,0 +1,25 @@
+Convert From, Convert To, Multiply By, Supported
+atm, Pa, 1.01325e+05, true
+atm, [k]Pa, 1.01325e+02, true
+bar, Pa, 1.0e+05, true
+bar, [k]Pa, 1.0e+02, true
+[c]mHg, Pa, 1.333224e+03, true
+[c]mH2O, Pa, 9.80665e+01, true
+dyn / [c]m^2, Pa, 1.0e-01, true
+ftHg, Pa, 4.063666e+04, true
+ftH2O, Pa, 2.989067e+03, true
+gf / [c]m^2 (gram-force / cm^2), Pa, 9.80665e+01, true
+inHg, Pa, 3.386389e+03, true
+inH2O, Pa, 2.490889e+02, true
+[k]gf / [c]m^2, Pa, 9.80665e+04, true
+[k]gf / m^2, Pa, 9.80665e+00, true
+[k]gf / [m]m^2, Pa, 9.80665e+06, true
+[k]lbf / in^2 (kip / in^2), Pa, 6.894757e+06, true
+[m]bar, Pa, 1.0e+02, true
+[m]mHg, Pa, 1.333224e+02, true
+[m]mH2O, Pa, 9.80665e+00, true
+pdl / ft^2, Pa, 1.488164e+00, true
+lbf / ft^2, Pa, 4.788026e+01, true
+lbf / in^2, Pa, 6.894757e+03, true
+psi, Pa, 6.894757e+03, true
+Torr, Pa, 1.333224e+02, true

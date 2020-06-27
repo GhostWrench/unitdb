@@ -1,0 +1,20 @@
+Convert From, Convert To, Multiply By, Supported
+ang, m, 1.0e-10, true
+AU, m, 1.495979e+11, true
+chain, m, 2.011684e+01, true
+us_fathom, m, 1.828804e+00, true
+fermi, m, 1.0e-15, true
+ft, m, 3.048e-01, true
+survey_ft, m, 3.048006e-01, true
+in, m, 2.54e-02, true
+kayser, m^-1, 1e+02, true
+ly, m, 9.46073e+15, true
+[u]in, m, 2.54e-08, true
+mi, m, 1.609344e+03, true
+survey_mi, m, 1.609347e+03, true
+Nmi (nautical mile), m, 1.852e+03, true
+parsec, m, 3.085678e+16, true
+pica, m, 4.233333e-03, true
+picapt (picapoint), m, 3.527778e-04, true
+rod, m, 5.029210e+00, true
+yd, m, 9.144e-01, true

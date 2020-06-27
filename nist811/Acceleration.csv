@@ -1,0 +1,5 @@
+Convert From, Convert To, Multiply By, Supported
+grav (Standard Gravity), m / s^2, 9.80665e+00, true
+ft / s^2, m / s^2, 3.048e-01, true
+galileo, m / s^2, 1.0e-02, true
+in / s^2, m / s^2, 2.54e-02, true

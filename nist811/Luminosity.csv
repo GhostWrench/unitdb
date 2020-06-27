@@ -1,0 +1,8 @@
+Convert From, Convert To, Multiply By, Supported
+cd / in^2, cd / m^2, 1.550003e+03, true
+footcandle, lx, 1.076391e+01, true
+footlambert, cd / m^2, 3.426259e+00, true
+lambert, cd / m^2, 3.183099e+03, true
+lm / ft^2, lx, 1.076391e+01, true
+phot, lx, 1.0e+04, true
+stilb, cd / m^2, 1.0e+04, true

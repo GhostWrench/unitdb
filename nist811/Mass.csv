@@ -1,0 +1,48 @@
+Convert From, Convert To, Multiply By, Supported
+carat, [k]g, 2.0e-04, true
+grain, [k]g, 6.479891e-05, true
+uk_cwt (long hundredweight), [k]g, 5.080235e+01, true
+cwt (short hundredweight), [k]g, 4.535924e+01, true
+[k]gf s^2 / m, [k]g, 9.80665e+00, true
+ozm, [k]g, 2.834952e-02, true
+dwt (pennyweight), [k]g, 1.555174e-03, true
+lbm, [k]g, 4.535924e-01, true
+lbm ft^2, [k]g m^2, 4.214011e-02, true
+lbm in^2, [k]g m^2, 2.926397e-04, true
+slug, [k]g, 1.459390e+01, true
+assay_ton, [k]g, 2.916667e-02, true
+uk_ton (long ton), [k]g, 1.016047e+03, true
+metric_ton, [k]g, 1.0e+03, true
+tonne (metric ton), [k]g, 1.0e+03, true
+ton (short ton), [k]g, 9.071847e+02, true
+ozm / ft^2, [k]g / m^2, 3.051517e-01, true
+ozm / in^2, [k]g / m^2, 4.394185e+01, true
+ozm / yd^2, [k]g / m^2, 3.390575e-02, true
+lbm / ft^2, [k]g / m^2, 4.882428e+00, true
+lbm / in^2, [k]g / m^2, 7.030696e+02, true
+denier, [k]g / m, 1.111111e-07, true
+lbm / ft, [k]g / m, 1.488164e+00, true
+lbm / in, [k]g / m, 1.785797e+01, true
+lbm / yd, [k]g / m, 4.960546e-01, true
+tex, [k]g / m, 1.0e-06, true
+lbm / hr, [k]g / s, 1.259979e-04, true
+lbm / min, [k]g / s, 7.559873e-03, true
+lbm / s, [k]g / s, 4.535924e-01, true
+ton / hr, [k]g / s, 2.519958e-01, true
+grain / gal, [k]g / m^3, 1.711806e-02, true
+g / [c]m^3, [k]g / m^3, 1.0e+03, true
+ozm / in^3, [k]g / m^3, 1.729994e+03, true
+ozm / uk_gal, [k]g / m^3, 6.236023e+00, true
+ozm / uk_gal, g / L, 6.236023e+00, true
+ozm / gal, [k]g / m^3, 7.489152e+00, true
+ozm / gal, g / L, 7.489152e+00, true
+lbm / ft^3, [k]g / m^3, 1.601846e+01, true
+lbm / in^3, [k]g / m^3, 2.767990e+04, true
+lbm / yd^3, [k]g / m^3, 5.932764e-01, true
+lbm / uk_gal, [k]g / m^3, 9.977637e+01, true
+lbm / uk_gal, [k]g / L, 9.977637e-02, true
+lbm / gal, [k]g / m^3, 1.198264e+02, true
+lbm / gal, [k]g / L, 1.198264e-01, true
+slug / ft^3, [k]g / m^3, 5.153788e+02, true
+uk_ton / yd^3, [k]g / m^3, 1.328939e+03, true
+ton / yd^3, [k]g / m^3, 1.186553e+03, true

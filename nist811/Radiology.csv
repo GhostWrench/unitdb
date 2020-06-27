@@ -1,0 +1,5 @@
+Convert From, Convert To, Multiply By, Supported
+Ci, Bq, 3.7e+10, true
+RAD (radiation absorbed dose), Gy, 1.0e-02, true
+rem, Sv, 1.0e-02, true
+R, C / [k]g, 2.58e-04, true

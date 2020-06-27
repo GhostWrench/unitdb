@@ -1,0 +1,12 @@
+Convert From, Convert To, Multiply By, Supported
+day, s, 8.64e+04, true
+sidereal_day, s, 8.616409e+04, false
+hr, s, 3.6e+03, true
+sidereal_hr, s, 3.590170e+03, false
+min, s, 6.0e+01, true
+sidereal_min, s, 5.983617e+01, false
+sidereal_s, s, 9.972696e-01, false
+shake, s, 1.0e-08, true
+yr, s, 3.1536e+07, true
+sidereal_yr, s, 3.155815e+07, false
+tropical_yr, s, 3.155693e+07, false

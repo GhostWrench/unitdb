@@ -1,0 +1,10 @@
+Convert From, Convert To, Multiply By, Supported
+BTU, J, 1.055056e+03, true
+cal, J, 4.1868e+00, true
+eV, J, 1.602177e-19, true
+erg, J, 1.0e-07, true
+ft pdl (foot poundal), J, 4.214011e-02, true
+ft lbf, J, 1.355818e+00, true
+[k]W hr, [M]J, 3.6e+00, true
+W hr, J, 3.6e+03, true
+W s, J, 1.0e+00, true

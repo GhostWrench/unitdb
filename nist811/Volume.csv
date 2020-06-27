@@ -1,0 +1,26 @@
+Convert From, Convert To, Multiply By, Supported
+acre survey_ft, m^3, 1.233489e+03, true
+bbl, m^3, 1.589873e-01, true
+bushel, m^3, 3.523907e-02, true
+cord, m^3, 3.624556e+00, false
+ft^3, m^3, 2.831685e-02, true
+in^3, m^3, 1.638706e-05, true
+mi^3, m^3, 4.168182e+09, true
+yd^3, m^3, 7.645549e-01, true
+cup, m^3, 2.365882E-04, true
+fl_oz, m^3, 2.957353e-05, true
+uk_gal, m^3, 4.54609e-03, true
+gal, m^3, 3.785412e-03, true
+uk_gill, m^3, 1.420653e-04, true
+gill, m^3, 1.182941e-04, true
+L, m^3, 1.0e-03, true
+uk_fl_oz, m^3, 2.841306e-05, true
+peck, m^3, 8.809768e-03, true
+dry_pt, m^3, 5.506105e-04, true
+pt (liquid), m^3, 4.731765e-04, true
+dry_qt, m^3, 1.101221e-03, true
+qt (liquid), m^3, 9.463529e-04, true
+stere (st), m^3, 1.0e+00, true
+tbs, m^3, 1.478676e-05, true
+tsp, m^3, 4.928922e-06, true
+GRT (register_ton), m^3, 2.831685e+00, true

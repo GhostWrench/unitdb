@@ -1,0 +1,11 @@
+Convert From, Convert To, Multiply By, Supported
+Fr (statcoulomb / franklin), C, 3.335641e-10, true
+gamma, T, 1.0e-09, false
+Gs, T, 1.0e-04, true
+Gi (Gilbert), A, 7.957747e-01, true
+Mx, Wb, 1.0e-08, true
+mho, S, 1.0e+00, true
+Oe (Oersted), A / m, 7.957747e+01, true
+ohm [c]m, ohm m, 1.0e-02, true
+ohm circular_mil / ft, ohm m, 1.662426e-09, false
+ohm circular_mil / ft, ohm [m]m^2 / m, 1.662426e-03, false
