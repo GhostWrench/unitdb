@@ -1359,7 +1359,7 @@
             "name": "Footlambert",
             "description": "Non-SI unit of illuminance or light intensity. 1 footcandle = 1 lm / ft^2",
             "category": "luminosity",
-            "scale": "(1/pi)/(0.3048,2))",
+            "scale": "(1/pi)/(0.3048 ^ 2)",
             "dimensions": {"luminosity": 1, "length": -2}
         },
         "lambert": {
