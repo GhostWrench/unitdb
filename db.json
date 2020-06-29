@@ -82,35 +82,35 @@
             "name": "yotta"
         },
         "Ki": {
-            "scale": "Math.pow(2,10)",
+            "scale": "2^10",
             "name": "kibi"
         },
         "Mi": {
-            "scale": "Math.pow(2,20)",
+            "scale": "2^20",
             "name": "mebi"
         },
         "Gi": {
-            "scale": "Math.pow(2,30)",
+            "scale": "2^30",
             "name": "gibi"
         },
         "Ti": {
-            "scale": "Math.pow(2,40)",
+            "scale": "2^40",
             "name": "tebi"
         },
         "Pi": {
-            "scale": "Math.pow(2,50)",
+            "scale": "2^50",
             "name": "pebi"
         },
         "Ei": {
-            "scale": "Math.pow(2,60)",
+            "scale": "2^60",
             "name": "exbi"
         },
         "Zi": {
-            "scale": "Math.pow(2,70)",
+            "scale": "2^70",
             "name": "zebi"
         },
         "Yi": {
-            "scale": "Math.pow(2,80)",
+            "scale": "2^80",
             "name": "yobi"
         }
     },
@@ -133,21 +133,21 @@
             "name": "Parts per Million",
             "description": "Unitless quantity defined as 1 / 10^6",
             "category": "unitless",
-            "scale": "1/1e6",
+            "scale": "1e-6",
             "dimensions": {}
         },
         "ppb": {
             "name": "Parts per Billion",
             "description": "Unitless quantity defined as 1 / 10^9",
             "category": "unitless",
-            "scale": "1/1e9",
+            "scale": "1e-9",
             "dimensions": {}
         },
         "ppt": {
             "name": "Parts per Trillion",
             "description": "Unitless quantity defined as 1 / 10^12",
             "category": "unitless",
-            "scale": "1/1e12",
+            "scale": "1e-12",
             "dimensions": {}
         },
         "g": {
@@ -479,7 +479,7 @@
         },
         "hr": {
             "name": "Hour",
-            "description": "defined as 60 minute",
+            "description": "Defined as 60 minute",
             "category": "time",
             "scale": "3.6e3",
             "dimensions": {"time": 1}
@@ -1295,7 +1295,7 @@
             "name": "Oersted",
             "description": "CGS unit of auxiliary magnetic field",
             "category": "electricity and magnetism",
-            "scale": "1000/(4*Math.PI)",
+            "scale": "1000/(4*pi)",
             "dimensions": {"current": 1, "length": -1}
         },
         "mol": {
@@ -1352,21 +1352,21 @@
             "name": "Footcandle",
             "description": "",
             "category": "luminosity",
-            "scale": "1/Math.pow(3.048e-1,2)",
+            "scale": "1/(0.3048 ^ 2)",
             "dimensions": {"luminosity": 1, "length": -2}
         },
         "footlambert": {
             "name": "Footlambert",
             "description": "Non-SI unit of illuminance or light intensity. 1 footcandle = 1 lm / ft^2",
             "category": "luminosity",
-            "scale": "(1/Math.PI)/(Math.pow(3.048e-1,2))",
+            "scale": "(1/pi)/(0.3048,2))",
             "dimensions": {"luminosity": 1, "length": -2}
         },
         "lambert": {
             "name": "Lambert",
             "description": "Non-SI unit of luminance. 1 lambert = 1/π cd / cm^2",
             "category": "luminosity",
-            "scale": "(1/Math.PI)*10000",
+            "scale": "(1/pi)*10000",
             "dimensions": {"luminosity": 1, "length": -2}
         },
         "phot": {
@@ -1401,42 +1401,42 @@
             "name": "Revolution",
             "description": "Angle describing one full revolution around an axis",
             "category": "rotation",
-            "scale": "2*Math.PI",
+            "scale": "2*pi",
             "dimensions": {}
         },
         "deg": {
             "name": "Degree",
             "description": "Angle measurement equal to 1/360 of a revolution",
             "category": "rotation",
-            "scale": "(1/180)*Math.PI",
+            "scale": "(1/180)*pi",
             "dimensions": {}
         },
         "arcmin": {
             "name": "Arc Minute",
             "description": "Angle measurement defined as 1/60 of a degree",
             "category": "rotation",
-            "scale": "(1/60)*(1/180)*Math.PI",
+            "scale": "(1/6480)*pi",
             "dimensions": {}
         },
         "arcsec": {
             "name": "Arc Second",
             "description": "Angle measurement defined as 1/60 of a arc minue",
             "category": "rotation",
-            "scale": "(1/3600)*(1/180)*Math.PI",
+            "scale": "(1/648000)*pi",
             "dimensions": {}
         },
         "rpm": {
             "name": "Revolutions per Minute",
             "description": "Rotational frequency describing the number of revolution around an axis in a minute",
             "category": "rotation",
-            "scale": "(2*Math.PI)/60",
+            "scale": "(2*pi)/60",
             "dimensions": {"time": -1}
         },
         "Hz": {
             "name": "Hertz",
             "description": "Frequency defined as 1 (cycle or rotation) / sec",
             "category": "miscellaneous",
-            "scale": "2*Math.PI",
+            "scale": "2*pi",
             "dimensions": {"time": -1}
         },
         "Bq": {
