@@ -1415,7 +1415,7 @@
             "name": "Arc Minute",
             "description": "Angle measurement defined as 1/60 of a degree",
             "category": "rotation",
-            "scale": "(1/6480)*pi",
+            "scale": "(1/10800)*pi",
             "dimensions": {}
         },
         "arcsec": {
