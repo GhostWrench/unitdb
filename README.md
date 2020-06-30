@@ -44,7 +44,7 @@ Units are defined as in the following example:
 
 This tells us that the "gf" symbol is defined a Gram-Force, it has dimensionality
 (mass * length / time^2), and has a scale of 9.80665e-3 relative to the SI
-standard measure of corce (the Newton). Common alternative symbols are in the
+standard measure of force (the Newton). Common alternative symbols are in the
 aliases array. Note that scale values are implemented as strings rather than floating
 point literals because some units can be precisely defined with a mathematical
 expression. For example, the US Survey Foot is defined as `1200/3937` meters and a 
