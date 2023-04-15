@@ -29,6 +29,22 @@
             "scale": "1e-6",
             "name": "micro"
         },
+        "μ": {
+            "scale": "1e-6",
+            "name": "micro"
+        },
+        "µ": {
+            "scale": "1e-6",
+            "name": "micro"
+        },
+        "mu": {
+            "scale": "1e-6",
+            "name": "micro"
+        },
+        "mc": {
+            "scale": "1e-6",
+            "name": "micro"
+        },
         "m": {
             "scale": "1e-3",
             "name": "milli"
